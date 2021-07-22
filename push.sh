@@ -8,7 +8,7 @@ set -e
 # git init
 # git add -A
 # git commit -m "first commit"
-# git push -f git@github.com:github.com/Zombie521/21sBlogImg master:master
+# git push -f git@github.com:github.com/Zombie521/21sBlogImg main:main
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='originCode'
@@ -22,4 +22,4 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master:master # 推送到仓库github master分支
+git push -f $githubUrl main:main # 推送到仓库github master分支
