@@ -8,5 +8,4 @@ git config --global user.email "532117848@qq.com"
 git init
 git add -A
 git commit -m "first commit"
-git remote add origin 
 git push -f https://github.com/Zombie521/21sBlogImg.git master:master

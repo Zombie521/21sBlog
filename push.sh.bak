@@ -3,10 +3,10 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-echo "# 21sBlogImg" >> README.md
+git config --global user.name "wuyiyao"
+git config --global user.email "532117848@qq.com"
 git init
-git add README.md
+git add -A
 git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Zombie521/21sBlogImg.git
-git push -u origin main
+git remote add origin 
+git push -f https://github.com/Zombie521/21sBlogImg.git master:master
