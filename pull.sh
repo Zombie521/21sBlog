@@ -1,20 +1,13 @@
 #!/usr/bin/env sh
 
-# È·±£½Å±¾Å×³öÓöµ½µÄ´íÎó
+# ç¡®ä¿è„šæœ¬æŠ›å‡ºé‡åˆ°çš„é”™è¯¯
 set -e
-
-# git config --global user.name "wuyiyao"
-# git config --global user.email "532117848@qq.com"
-# git init
-# git add -A
-# git commit -m "first commit"
-# git push -f git@github.com:github.com/Zombie521/21sBlogImg main:main
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='originCode'
   githubUrl=git@github.com:Zombie521/21sBlogImg.git
 else
-  msg='À´×Ôgithub actionsµÄ×Ô¶¯²¿Êğ'
+  msg='æ¥è‡ªgithub actionsçš„è‡ªåŠ¨éƒ¨ç½²'
   githubUrl=https://wuyiyao:${GITHUB_TOKEN}@github.com/Zombie521/21sBlogImg.git
   git config --global user.name "wuyiyao"
   git config --global user.email "532117848@qq.com"
@@ -22,4 +15,4 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl main:main # ÍÆËÍµ½²Ö¿âgithub master·ÖÖ§
+git pull      #pullåˆ°æœ¬åœ°ä»“åº“
