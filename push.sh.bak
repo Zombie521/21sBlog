@@ -15,4 +15,4 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git push
+git push -f $githubUrl # 推送到仓库github master分支
