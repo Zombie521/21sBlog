@@ -5,10 +5,10 @@ set -e
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='originCode'
-  githubUrl=git@github.com:Zombie521/21sBlogImg
+  githubUrl=git@github.com:Zombie521/21sBlogImg.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://wuyiyao:${GITHUB_TOKEN}@github.com/Zombie521/21sBlogImg
+  githubUrl=https://wuyiyao:${GITHUB_TOKEN}@github.com/Zombie521/21sBlogImg.git
   git config --global user.name "wuyiyao"
   git config --global user.email "532117848@qq.com"
 fi
